@@ -1,10 +1,9 @@
 Страница интернет-магазина
+===
 
 [![Build status](https://ci.appveyor.com/api/projects/status/r69jicm1cngiv5pv?svg=true)](https://ci.appveyor.com/project/ArtKonX/ra16-homeworks-components-store-func)
 
 [Ссылка на Github Pages](https://artkonx.github.io/ra16-homeworks-components-store-func/)
-
-===
 
 Необходимо создать React-компонент `ShopItemFunc` (функциональный компонент), с помощью которого мы могли бы реализовывать представление информации о товарах из нашего каталога на сайте в таком виде (компонент обведён пунктирной линией):
 ![Внешний вид страницы после реализации компонента](./pic/preview.png)
