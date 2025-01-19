@@ -6,9 +6,13 @@ import data from '../data.json'
 
 import { useState } from 'react'
 
-function App() {
+import IItem from './interfaces/item.interface'
 
-  const [items, setItems] = useState(data);
+const App: React.FC = () => {
+
+  const [items] = useState<IItem[]>(data);
+
+  if (!items) return <><h1>Loading...</h1></>
 
   return (
     <div className="container">
@@ -18,7 +22,7 @@ function App() {
         <div className='highlight-overlay'></div>
       </div>
       <div className="window">
-        {items.map(item => <ShopItemFunc key={item.id} item={item} />)}
+        {items.map((item: IItem) => <ShopItemFunc key={item.id} item={item} />)}
       </div>
     </div>
   )
